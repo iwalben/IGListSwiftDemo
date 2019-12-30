@@ -9,7 +9,9 @@
 import UIKit
 import IGListKit
 
-class AlSectionController: ListBindingSectionController<ListDiffable>,ListBindingSectionControllerDataSource {
+class AlSectionController: ListBindingSectionController<ListDiffable>,ListBindingSectionControllerDataSource ,LikeDelegate{
+    
+    var localLikes: Int? = nil
     
     override init(){
         super.init()
@@ -22,10 +24,9 @@ class AlSectionController: ListBindingSectionController<ListDiffable>,ListBindin
         let results: [ListDiffable] = [
             UserViewModel(username: object.username, timestamp: object.timestamp),
             ImageViewModel(imagename: object.imagename),
-            UserViewModel(username: object.username, timestamp: object.timestamp),
-            UserViewModel(username: object.username, timestamp: object.timestamp)
+            LikeViewModel(likes: localLikes ?? object.likes)
         ]
-        return results
+        return results + object.comments
     }
     
     func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, cellForViewModel viewModel: Any, at index: Int) -> UICollectionViewCell & ListBindable {
@@ -38,6 +39,15 @@ class AlSectionController: ListBindingSectionController<ListDiffable>,ListBindin
         case is ImageViewModel :
             identifier = "ImageCell"
             guard let cell = collectionContext?.dequeueReusableCell(withNibName: identifier, bundle: .main, for: self, at: index) as? ImageCell else { fatalError() }
+            return cell
+        case is LikeViewModel :
+            identifier = "LikeCell"
+            guard let cell = collectionContext?.dequeueReusableCell(withNibName: identifier, bundle: .main, for: self, at: index) as? LikeCell else { fatalError() }
+            cell.delegate = self
+            return cell
+        case is CommentViewModel :
+            identifier = "CommentCell"
+            guard let cell = collectionContext?.dequeueReusableCell(withNibName: identifier, bundle: .main, for: self, at: index) as? CommentCell else { fatalError() }
             return cell
         default:
             identifier = "action"
@@ -52,8 +62,16 @@ class AlSectionController: ListBindingSectionController<ListDiffable>,ListBindin
         switch viewModel {
         case is UserViewModel: height = 60
         case is ImageViewModel : height = 300
+        case is LikeViewModel : height = 40
+        case is CommentViewModel : height = 50
         default: height = 55
         }
         return CGSize(width: width, height: height)
+    }
+    
+    func didSelected(cell: LikeCell) {
+        let a =  Int(cell.numberL.text!)! + 1
+        cell.numberL.text = String(a)
+        update(animated: true, completion: nil)
     }
 }

@@ -20,8 +20,14 @@
 		6AE7296A23B8EA340008E10D /* AlSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7296923B8EA340008E10D /* AlSectionController.swift */; };
 		6AE7296D23B8F3910008E10D /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7296B23B8F3910008E10D /* ImageCell.swift */; };
 		6AE7296E23B8F3910008E10D /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7296C23B8F3910008E10D /* ImageCell.xib */; };
-		6AE7297023B8F4390008E10D /* bimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7296F23B8F4390008E10D /* bimage.jpg */; };
 		6AE7297223B8F4B30008E10D /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7297123B8F4B30008E10D /* ImageViewModel.swift */; };
+		6AE7297523BA346D0008E10D /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7297323BA346D0008E10D /* CommentCell.swift */; };
+		6AE7297623BA346D0008E10D /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7297423BA346D0008E10D /* CommentCell.xib */; };
+		6AE7297823BA34B30008E10D /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7297723BA34B30008E10D /* CommentViewModel.swift */; };
+		6AE7297D23BA3B310008E10D /* LikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7297B23BA3B310008E10D /* LikeCell.swift */; };
+		6AE7297E23BA3B310008E10D /* LikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7297C23BA3B310008E10D /* LikeCell.xib */; };
+		6AE7298023BA3D700008E10D /* LikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7297F23BA3D700008E10D /* LikeViewModel.swift */; };
+		6AE7298223BA3F860008E10D /* 250.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7298123BA3F860008E10D /* 250.jpg */; };
 		C783EAC0DD4AF40D7A940E4E /* Pods_IGListKitSwiftDemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D371E82A98A232F8F6255 /* Pods_IGListKitSwiftDemon.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +49,14 @@
 		6AE7296923B8EA340008E10D /* AlSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlSectionController.swift; sourceTree = "<group>"; };
 		6AE7296B23B8F3910008E10D /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		6AE7296C23B8F3910008E10D /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
-		6AE7296F23B8F4390008E10D /* bimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bimage.jpg; sourceTree = "<group>"; };
 		6AE7297123B8F4B30008E10D /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		6AE7297323BA346D0008E10D /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		6AE7297423BA346D0008E10D /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		6AE7297723BA34B30008E10D /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		6AE7297B23BA3B310008E10D /* LikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCell.swift; sourceTree = "<group>"; };
+		6AE7297C23BA3B310008E10D /* LikeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCell.xib; sourceTree = "<group>"; };
+		6AE7297F23BA3D700008E10D /* LikeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewModel.swift; sourceTree = "<group>"; };
+		6AE7298123BA3F860008E10D /* 250.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 250.jpg; sourceTree = "<group>"; };
 		9C7BB797FF574365EA28368E /* Pods-IGListKitSwiftDemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitSwiftDemon.debug.xcconfig"; path = "Target Support Files/Pods-IGListKitSwiftDemon/Pods-IGListKitSwiftDemon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,14 +118,20 @@
 				6AE7296423B8E7DF0008E10D /* UserCell.xib */,
 				6AE7296B23B8F3910008E10D /* ImageCell.swift */,
 				6AE7296C23B8F3910008E10D /* ImageCell.xib */,
+				6AE7297B23BA3B310008E10D /* LikeCell.swift */,
+				6AE7297C23BA3B310008E10D /* LikeCell.xib */,
+				6AE7297323BA346D0008E10D /* CommentCell.swift */,
+				6AE7297423BA346D0008E10D /* CommentCell.xib */,
 				6AE7296723B8E9740008E10D /* UserViewModel.swift */,
 				6AE7297123B8F4B30008E10D /* ImageViewModel.swift */,
+				6AE7297F23BA3D700008E10D /* LikeViewModel.swift */,
+				6AE7297723BA34B30008E10D /* CommentViewModel.swift */,
 				6AE7296923B8EA340008E10D /* AlSectionController.swift */,
 				6AE7295323B8E0220008E10D /* Main.storyboard */,
 				6AE7295623B8E0260008E10D /* Assets.xcassets */,
 				6AE7295823B8E0260008E10D /* LaunchScreen.storyboard */,
 				6AE7295B23B8E0260008E10D /* Info.plist */,
-				6AE7296F23B8F4390008E10D /* bimage.jpg */,
+				6AE7298123BA3F860008E10D /* 250.jpg */,
 			);
 			path = IGListKitSwiftDemon;
 			sourceTree = "<group>";
@@ -178,12 +196,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AE7297023B8F4390008E10D /* bimage.jpg in Resources */,
+				6AE7298223BA3F860008E10D /* 250.jpg in Resources */,
 				6AE7296623B8E7DF0008E10D /* UserCell.xib in Resources */,
+				6AE7297E23BA3B310008E10D /* LikeCell.xib in Resources */,
 				6AE7295A23B8E0260008E10D /* LaunchScreen.storyboard in Resources */,
 				6AE7295723B8E0260008E10D /* Assets.xcassets in Resources */,
 				6AE7296E23B8F3910008E10D /* ImageCell.xib in Resources */,
 				6AE7295523B8E0220008E10D /* Main.storyboard in Resources */,
+				6AE7297623BA346D0008E10D /* CommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +261,13 @@
 				6AE7294E23B8E0220008E10D /* AppDelegate.swift in Sources */,
 				6AE7297223B8F4B30008E10D /* ImageViewModel.swift in Sources */,
 				6AE7295023B8E0220008E10D /* SceneDelegate.swift in Sources */,
+				6AE7297823BA34B30008E10D /* CommentViewModel.swift in Sources */,
+				6AE7297523BA346D0008E10D /* CommentCell.swift in Sources */,
 				6AE7296523B8E7DF0008E10D /* UserCell.swift in Sources */,
+				6AE7298023BA3D700008E10D /* LikeViewModel.swift in Sources */,
 				6AE7296D23B8F3910008E10D /* ImageCell.swift in Sources */,
 				6AE7296223B8E5D70008E10D /* Model.swift in Sources */,
+				6AE7297D23BA3B310008E10D /* LikeCell.swift in Sources */,
 				6AE7296A23B8EA340008E10D /* AlSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

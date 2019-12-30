@@ -26,10 +26,18 @@ class ViewController: UIViewController ,ListAdapterDataSource{
 
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        data.append(Model(username: "zhangsan", timestamp: "2019-11-11", imagename: "bimage.jpg"))
+        data.append(Model(username: "zhangsan",
+                          timestamp: "2019-11-11",
+                          imagename: "250.jpg",
+                          likes:10,
+                          comments: [
+                            CommentViewModel(name: "@lisi", content: "hello"),
+                            CommentViewModel(name: "@wangwu", content: "poly"),
+                            CommentViewModel(name: "@wangmazi", content: "like")
+                        ])
+        )
         view.addSubview(collectionView)
         adapter.collectionView = collectionView
         adapter.dataSource = self
